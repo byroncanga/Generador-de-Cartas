@@ -10,11 +10,12 @@ const card = ()=> {
 }
 
 function numeros(){
-    const numberRng = Math.floor(Math.random() * 14 + 1);
+    const numberRng = Math.floor(Math.random() * 13 + 1);
+    if (numberRng === 1) return "A" 
     if (numberRng === 11) return "J";
     if (numberRng === 12) return "Q"  
     if (numberRng === 13) return "K" 
-    if (numberRng === 14) return "A" 
+    
     return numberRng;
 }
 
